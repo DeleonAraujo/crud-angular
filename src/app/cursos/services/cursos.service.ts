@@ -20,4 +20,8 @@ list() {
   );
 }
 
+save(record: Curso) {
+  return this.httpClient.post<Curso>(this.API, record);
+}
+
 }
